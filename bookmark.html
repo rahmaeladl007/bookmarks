@@ -1,0 +1,61 @@
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bookmark.css">
+</head>
+<body class="bg-dark">
+  <div class="container mt-5 text-secondary">
+    <h1 class="text-center fw-bolder fs-3">Bookmark your favorite sites</h1>
+    <form class="mt-5">
+      <div class="mb-3 text-center ">
+        <label class="form-label fw-bolder fs-5">Site Name</label>
+        <div class="d-flex justify-content-center align-content-center"> 
+        <input type="text" class="form-control w-50  border border-0 " id="sites"  placeholder="Site Name">
+      </div>
+      </div>
+      <div class="mb-3 text-center">
+        <label  class="form-label fw-bolder fs-5">Site URL</label>
+        <div class="d-flex justify-content-center align-content-center">
+        <input type="text" class="form-control w-50" id="url" placeholder="Site URL">
+      </div>
+      </div>
+      <div class="d-flex justify-content-center align-content-center">
+        <button type="button" class="btn btn-success " onclick="siteAdd()" id="submit">Submit</button>
+      </div>
+    </form>
+    <form class="d-flex" role="search" id="search">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit" onclick="search()" id="inputSearch">Search</button>
+    </form>
+<div>
+  <table class="table table-dark">
+    <thead class="text-center fw-bolder fs-5 ">
+      <tr >
+        <th class="text-secondary" >
+          site
+        </th>
+        <th class="text-secondary">
+          visit
+        </th>
+        <th class="text-secondary">
+          delete
+        </th>
+        <th class="text-secondary">
+          update
+        </th>
+      </tr>
+    </thead>
+    <tbody class="text-center"id="siteTabs">
+   
+    
+    </tbody>
+  </table>
+</div>
+  </div>
+<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bookmark.js"></script>
+</body>
+</html>
